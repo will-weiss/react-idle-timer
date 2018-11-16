@@ -49,7 +49,7 @@ describe('IdleTimer', () => {
       const timer = idleTimer()
       expect(Object.keys(timer.props()).length).toBeGreaterThan(0)
       timer.unmount()
-      expect(Object.keys(timer.props()).length).toBe(0)
+      expect(timer.length).toBe(0)
     })
   })
 
